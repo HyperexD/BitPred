@@ -29,7 +29,6 @@ class Plots(object):
         Returns:
             tab: bokeh tab component.
 
-        @author: Yulia Khlyaka
         """
         ds = prepare_dummy_data()
 
@@ -106,7 +105,6 @@ class Plots(object):
         Returns:
             tab: bokeh tab component.
 
-        @author: Andrii Koval
         """
         ds = prepare_dummy_data()
 
@@ -182,8 +180,6 @@ class Plots(object):
 
         Returns:
             tab: bokeh tab component.
-
-        @author: Pavlo Mospan
         """
         ds = prepare_dummy_data()
 
@@ -267,8 +263,6 @@ class Plots(object):
         Returns:
             script: bokeh script component.
             div: bokeh div component.
-
-        @author: Andrii Koval, Yulia Khlyaka, Pavlo Mospan
         """
         tab1 = self.arima_tab()
         tab2 = self.prophet_tab()
@@ -319,7 +313,6 @@ class Plots(object):
             script: bokeh script component.
             div: bokeh div component.
 
-        @author: Andrii Koval, Yulia Khlyaka
         """
         df = prepare_data()
         plot = figure(plot_width=800,
@@ -398,7 +391,6 @@ class Plots(object):
             script: bokeh script component.
             div: bokeh div component.
 
-        @author: Andrii Koval
         """
         df = prepare_data()
         seasonal, resid, trend = seasonal_decompose(df)
