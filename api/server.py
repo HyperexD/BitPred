@@ -23,7 +23,6 @@ predictor = Predictor()
 def index():
     """Index endpoint
 
-    @author: Andrii Koval
     """
 
     start = '2015-08-07'
@@ -43,7 +42,6 @@ def prophet():
     """Prophet output endpoint.
     Sends data to bokeh js handler.
 
-    @author: Andrii Koval
     """
     if request.method == 'POST':
         return jsonify(message='Post message')
@@ -69,7 +67,6 @@ def arima():
     """Arima output endpoint.
     Sends data to bokeh js handler.
 
-    @author: Yulia Khlyaka
     """
     if request.method == 'POST':
         return jsonify(message='Post message')
@@ -95,7 +92,6 @@ def lstm():
     """LSTM output endpoint.
     Sends data to bokeh js handler.
 
-    @author: Pavlo Mospan
     """
     if request.method == 'POST':
         return jsonify(message='Post message')
@@ -120,7 +116,6 @@ def predict_model():
     """Predict endpoint.
     Sets model name to predict.
 
-    @author: Andrii Koval
     """
     data = request.json
 
@@ -137,7 +132,6 @@ def predict_start():
     """Predict date endpoint.
     Sets start date of training data.
 
-    @author: Andrii Koval
     """
     data = request.json
 
@@ -154,7 +148,6 @@ def predict_end():
     """Predict date end endpoint.
     Sets end date for prediction.
 
-    @author: Andrii Koval
     """
     data = request.json
 
@@ -172,7 +165,6 @@ def predict():
     Chooses model for prediction and predcits
     bitcoin price for the given time period.
 
-    @author: Andrii Koval, Yulia Khlyaka, Pavlo Mospan
     """
     data = request.json
 
@@ -203,7 +195,6 @@ def show_dashboard():
     """Dashboard endpoint.
     Draws bokeh plots.
 
-    @author: Andrii Koval
     """
     script, div = plots.make_plot()
     script_tab, div_tab = plots.make_tabs()
