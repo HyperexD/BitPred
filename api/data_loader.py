@@ -17,7 +17,6 @@ def load_currency(currency, start_date, end_date, path):
     Returns:
         df: DataFrame
 
-    @author: Andrii Koval
     """
     df = yf.download(currency,
                      start=start_date,
@@ -41,7 +40,6 @@ def prepare_data(path='data/BTC-USD.csv', start_date='2017-01-01'):
     Returns:
         df: preprocessed DataFrame
 
-    @author: Andrii Koval
     """
     df = pd.read_csv('data/BTC-USD.csv')
     df['Date'] = pd.to_datetime(df.Date, format='%Y-%m-%d')
@@ -58,8 +56,7 @@ def prepare_dummy_data():
 
     Returns:
         ds: dummy data dict
-
-    @author: Andrii Koval
+        
     """
     data = prepare_data()
 
@@ -85,7 +82,6 @@ def seasonal_decompose(df):
         resid: The residual component of the data series.
         trend: The trend component of the data series.
 
-    @author: Andrii Koval
     """
     # Resampling to monthly frequency
     df.index = df.Date
@@ -114,7 +110,6 @@ def load_data_arima(start_date='2018-01-01', end_date='2020-02-01'):
     Returns:
         df: preprocessed DataFrame
 
-    @author: Yulia Khlyaka
     """
     # loading data
     try:
@@ -146,7 +141,6 @@ def load_df_bidirectlstm(name, start_date):
 
     :return: DataFrame of loaded currency
 
-    @author: Pavlo Mospan
     """
 
     df = yf.download(name, start=start_date)
@@ -162,7 +156,6 @@ def data_update():
         :param start_date: 2017-01-01
         :param end_date: today
 
-    @author: Yulia Khlyaka
     """
     end_date = datetime.today()
     data_df = yf.download('BTC-USD',
