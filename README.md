@@ -1,7 +1,7 @@
 # BitPred
-##Bitcoin price predictor capstone project
+## Bitcoin price predictor capstone project
 Milestones:
-[x] Initial idea submitted
-[x] Milestone 1 form evaluated
-[x] index.html, layout.html, style.css
-[x] Flask server and bokeh via CustomJS callbacks
+- [X] Initial idea submitted
+- [X] Milestone 1 form evaluated
+- [X] index.html, layout.html, style.css
+- [X] Flask server and bokeh via CustomJS callbacks
