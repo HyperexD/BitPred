@@ -6,7 +6,7 @@ Milestones:
 - [X] Milestone 1 form evaluated
 - [X] Baseline models and visualizations
 - [X] CNN and GRU lossy models
-- [X] index.html, layout.html, style.css
+- [X] index.html, layout.html, style.css and user design canvas
 - [X] Flask server and bokeh via CustomJS callbacks
 - [X] Start server shell script
 - [X] Milestone 2 complete
