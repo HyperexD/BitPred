@@ -8,4 +8,5 @@ Milestones:
 - [X] CNN and GRU lossy models
 - [X] index.html, layout.html, style.css
 - [X] Flask server and bokeh via CustomJS callbacks
+- [X] Start server shell script
 - [X] Milestone 2 complete
