@@ -1,8 +1,8 @@
 # BitPred
 ## Bitcoin price predictor capstone project
 ### Kanishka Pandey, Bennett University, 7th semester
-Blog Link - 
-LinkedIn Post - 
+#### Blog Link - 
+##### LinkedIn Post - 
 Milestones:
 - [X] Initial idea submitted
 - [X] Milestone 1 form evaluated
