@@ -13,4 +13,4 @@ Milestones:
 - [X] Added open source license
 - [X] Updated final models
 - [X] Evaluation scripts and raw data for demo
-- [] Non optimal model results
+- [ ] Non optimal model results
