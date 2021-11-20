@@ -2,8 +2,8 @@
 ## Bitcoin price predictor capstone project
 ### Kanishka Pandey, Bennett University, 7th semester
 #### LinkedIn Post - https://www.linkedin.com/posts/kanishka-pandey-249a8a145_machinelearnig-bitcoin-capstoneproject-activity-6852174529544933377-tV2r
-##### Twitter Post - 
-###### Blog Link - 
+#### Twitter Post - 
+#### Blog Link - 
 Milestones:
 - [X] Initial idea submitted
 - [X] Milestone 1 form evaluated
