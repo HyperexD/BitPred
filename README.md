@@ -10,3 +10,4 @@ Milestones:
 - [X] Flask server and bokeh via CustomJS callbacks
 - [X] Start server shell script
 - [X] Milestone 2 complete
+- [X] Added open source license
