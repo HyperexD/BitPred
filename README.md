@@ -1,6 +1,8 @@
 # BitPred
 ## Bitcoin price predictor capstone project
 ### Kanishka Pandey, Bennett University, 7th semester
+Blog Link - 
+LinkedIn Post - 
 Milestones:
 - [X] Initial idea submitted
 - [X] Milestone 1 form evaluated
@@ -13,4 +15,7 @@ Milestones:
 - [X] Added open source license
 - [X] Updated final models
 - [X] Evaluation scripts and raw data for demo
-- [ ] Non optimal model results
+- [X] Non optimal model results
+- [ ] Presentation and Poster
+- [ ] Milestone 3 complete
+- [ ] (OPTIONAL) Demo video
