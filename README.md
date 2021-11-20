@@ -11,3 +11,4 @@ Milestones:
 - [X] Start server shell script
 - [X] Milestone 2 complete
 - [X] Added open source license
+- [X] Updated final models
