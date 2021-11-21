@@ -36,8 +36,6 @@ class Predictor(object):
 
         Returns:
             forecast: prophet forecast.
-
-        @author: Andrii Koval
         """
         df = prepare_data(self.pred_dict["start_date"])
         df = df.rename(columns={"Date": "ds", "Close": "y"})
@@ -61,8 +59,6 @@ class Predictor(object):
 
          Returns:
              forecast: arima forecast.
-
-         @author: Yulia Khlyaka
          """
         # training data
         date1 = pd.to_datetime(self.pred_dict['start_date'])
@@ -109,8 +105,6 @@ class Predictor(object):
 
          Returns:
              forecast: bidirectional lstm forecast.
-
-         @author: Pavlo Mospan
          """
         today = datetime.today().strftime('%Y-%m-%d')
         yesterday = date.today() - timedelta(days=1)
