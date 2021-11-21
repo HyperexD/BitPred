@@ -19,8 +19,6 @@ class Bidirect_LSTM:
 
         :param df: DataFrame with values to be scaled
         :return: array of prepared values
-
-        @author: Pavlo Mospan
         """
 
         close_price = df.Close.values.reshape(-1, 1)
@@ -46,8 +44,6 @@ class Bidirect_LSTM:
         :param seq_len: sequence length
 
         :return: array of sequenced values
-
-        @author: Pavlo Mospan
         """
         d = []
 
@@ -67,7 +63,6 @@ class Bidirect_LSTM:
 
         :return: arrays of trained and test values
 
-        @author: Pavlo Mospan
         """
 
         self.whole_data = self.to_sequences(data_raw, seq_len)
@@ -91,8 +86,6 @@ class Bidirect_LSTM:
         :param X: array of target or feature values
 
         :return: array of shape (None, 20, 1)
-
-        @author: Pavlo Mospan
         """
         next = len(X)
         a = np.insert(X, [next], X[next - 1], axis=0)
@@ -114,8 +107,6 @@ class Bidirect_LSTM:
         :param df: DataFrame of Bitcoin prices
 
         :return: forecast DataFrame with date, actual and predicted values
-
-        @author: Pavlo Mospan
         """
         y_true_inverse = self.scl.inverse_transform(targ_array)
         y_hat_inverse = self.scl.inverse_transform(y_hat)
