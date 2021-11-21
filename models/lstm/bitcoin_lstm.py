@@ -19,7 +19,6 @@ class Bitcoin_LSTM:
         :param df: DataFrame with values to be scaled and shifted
         :return: array of prepared values
 
-        @author: Pavlo Mospan
         """
 
         timeseries[["Close-btc", "Close-sp500", "Close-dxy", "Close-gold"]] = self.scl.fit_transform(timeseries[[
@@ -43,7 +42,6 @@ class Bitcoin_LSTM:
         :param times: how many predictions to make
         :return: predict and train arrays
 
-        @author: Pavlo Mospan
         """
         self.X_quantity = X_quantity
 
@@ -70,7 +68,6 @@ class Bitcoin_LSTM:
         :param values: array of predict/train values
         :return: numpay.ndarray of sequence of X_quantity days
 
-        @author: Pavlo Mospan
         """
         x = []
         ready_X = []
@@ -93,7 +90,6 @@ class Bitcoin_LSTM:
         :param targets: array of predict/train targets
         :return: numpay.ndarray of target values
 
-        @author: Pavlo Mospan
         """
         ready_Y = []
         for i_ in range(int(len(targets) / self.X_quantity)):
@@ -111,7 +107,6 @@ class Bitcoin_LSTM:
         :param g: array of shape (None, 1)
         :return: array of shape (None, 4)
 
-        @author: Pavlo Mospan
         """
         g = np.insert(g, [1], .4, axis=1)
         g = np.insert(g, [2], .4, axis=1)
@@ -132,7 +127,6 @@ class Bitcoin_LSTM:
         :param pred: array of predicted values
         :return: Forecast DataFrame
 
-        @author: Pavlo Mospan
         """
 
         t = timeseries.reset_index()
